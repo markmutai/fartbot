@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+
+  .trns {
+    @apply transition-all duration-500;
+  }
+
+  .trns300 {
+    @apply transition-all duration-300;
+  }
+
+  .trns100 {
+    @apply transition-all duration-100;
+  }
+
+  .trns700 {
+    @apply transition-all duration-700;
+  }
+
+  .trns1 {
+    @apply transition-all duration-[1000];
+  }
+
+  .txtShadow {
+    text-shadow: 1px -3px 4px hsla(0, 0%, 0%, 0.3)
+  }
+
+  .txtShadowNone {
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0)
+  }
+
+
+
+  /* .tw_ptn_drk {
+    @apply ptn_drk bg-pattern_drk;
+  } */
+
+  /* ... */
+}
+
+@layer utilities {
+  .bgFx {
+    background: linear-gradient(200deg, #2c3e50, #1c1e23);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 130s ease infinite;
+    -moz-animation: AnimationName 130s ease infinite;
+    animation: AnimationName 130s ease infinite;
+    /* width: 100%; */
+  }
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 100%
+    }
+
+    50% {
+      background-position: 200% 100%
+    }
+
+    100% {
+      background-position: 0% 100%
+    }
+  }
+
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 100%
+    }
+
+    50% {
+      background-position: 200% 100%
+    }
+
+    100% {
+      background-position: 0% 100%
+    }
+  }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 100%
+    }
+
+    50% {
+      background-position: 200% 100%
+    }
+
+    100% {
+      background-position: 0% 100%
+    }
+  }
+
+
+  @screen xsm {
+    .bgFx {
+      background-size: 25rem;
+    }
+  }
+
+  @screen md {
+    .bgFx {
+      background-size: 25rem;
+    }
+  }
+
+  @screen xl {
+    .bgFx {
+      background-size: 27rem;
+    }
+  }
+
+  @screen 2xl {
+    .bgFx {
+      background-size: 30rem;
+    }
+  }
+
+  /* @screen 3xl {
+    .bgFx {
+      background-size: 25rem;
+    }
+  } */
+
+
+
+
+
+}
